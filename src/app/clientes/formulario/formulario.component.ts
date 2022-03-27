@@ -7,8 +7,11 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.scss']
 })
+
+
 export class FormularioComponent implements OnInit {
   formCliente!: FormGroup;
+  
 
   constructor(private formBuilder: FormBuilder) { }
 
@@ -18,7 +21,7 @@ export class FormularioComponent implements OnInit {
 
   createForm(cliente: Cliente) {
     this.formCliente = new FormGroup({
-      fullnome: new FormControl(cliente.fullname),
+      name: new FormControl(cliente.name),
       login: new FormControl(cliente.login),
       password: new FormControl(cliente.password),
       email: new FormControl(cliente.email),

@@ -1,7 +1,7 @@
 export class Cliente {
-    fullname: string = '';
+    name: string = '';
     login: string = '';
     password: string = '';
     email: string = '';
-    cell: number = 1;
+    cell: string = '';
   }
